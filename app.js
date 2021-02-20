@@ -25,9 +25,10 @@ function renderData(doc) {
   li.appendChild(phoneNumber);
   li.appendChild(email);
 
-  restoList.appendChild(li);
+    // console.log(li);
 
-  
+  restoList.appendChild(li);
+    
 }
 
 // getting data
@@ -57,6 +58,7 @@ form.addEventListener("submit", (e) => {
   form.field2.value = "";
   form.field3.value = "";
   form.field4.value = "";
+  restoList.textContent='';
 });
 
 getInfo.onclick = function()
