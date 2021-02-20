@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Dashboard</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
 
-   <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/cards.css" />
 
-   <!-- FIREBASE -->
-   <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
-</head>
-<body>
-   
-   <!-- horizontal -->
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <!-- horizontal -->
 
-   <h4>Restaurants Available</h4>
-   <button type="button" class="btn btn-success" id="get-info">
-      Get Data
-   </button>
-   <div class="row">
+    <h2 class="heading1">Good News!! Restaurants Available</h2>
+    <div class="btn-div">
+      <button type="button" class="btn1 btn-success" id="get-info">
+        Show available Restaurants
+      </button>
+    </div>
+    <div class="row">
       <div class="column guides">
-         <!-- <div class="flip">
+        <!-- <div class="flip">
             <div class="front" style="background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
                <h1 class="text-shadow">RITZ CONTINENTAL</hi>
             </div>
@@ -31,10 +32,9 @@
             </div>
          </div> -->
       </div>
-   </div>
+    </div>
 
-
-   <script>
+    <script>
       // Your web app's Firebase configuration
       var firebaseConfig = {
         apiKey: "AIzaSyCGbo82cXypP3VTPk6bFPXxYIJ69c0UpbA",
@@ -48,8 +48,7 @@
       firebase.initializeApp(firebaseConfig);
       const db = firebase.firestore();
       db.settings({timestampsInSnapshots: true});
-   </script>
-   <script src="retrieve.js"></script>
-
-</body>
+    </script>
+    <script src="retrieve.js"></script>
+  </body>
 </html>
