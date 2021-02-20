@@ -2,9 +2,13 @@
 
 ## DEVELOPED BY:
 
-Utkarsh Nagar
-Ananya Tripathi
-Siddesh Shinde
+1. Utkarsh Nagar
+2. Ananya Tripathi
+3. Siddesh Shinde
+
+## Tech Stack 🗃
+
+<img src="<img alt="Custom badge" src="https://img.shields.io/endpoint?color=Yellow&label=Firebase">"> <img src=<img alt="Custom badge" src="https://img.shields.io/endpoint?color=Yellow&label=HTML5">> <img src="https://img.shields.io/endpoint?color=Yellow&label=CSS3"> <img src="https://img.shields.io/endpoint?color=Yellow&label=Javascript">
 
 ## Getting Started 👨‍💻
 
