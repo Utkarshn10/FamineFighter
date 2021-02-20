@@ -6,7 +6,8 @@
                   major issues, the world is facing right now. First being
                   reduction of food wastage and second being reducing hunger. We
                   together plan to make this world worth living and provide a
-                  life that everyone deserves!<br /></p>
+                  life that everyone deserves!<br />
+                  The site contains mainly two pages Form and the Available restaurants page.</p>
 
 ## DEVELOPED BY:
 
