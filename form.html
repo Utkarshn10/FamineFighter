@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Donate Form</title>
+
+    <!-- Font Awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/f3bf4321f3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900|Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Style Sheets -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Boostrap Script files -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
+  </head>
+
+  <body>
+    <div class="form-style-10">
+      <form id="add-resto-form">
+        <div class="section"><span>1</span>First Name & Address</div>
+        <div class="inner-wrap">
+          <label>Your Full Name <input type="text" name="field1" /></label>
+          <label>Address <textarea name="field2"></textarea></label>
+        </div>
+
+        <div class="section"><span>2</span>Email & Phone</div>
+        <div class="inner-wrap">
+          <label>Email Address <input type="email" name="field3" /></label>
+          <label>Phone Number <input type="text" name="field4" /></label>
+        </div>
+
+        <div class="button-section">
+          <input type="submit" name="Sign Up" />
+        </div>
+
+        <button type="button" class="btn btn-success" id="get-info">Get Data</button>
+        
+        </form>
+    </div>
+
+    <div>
+      <ul id="resto-list"></ul>
+    </div>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCGbo82cXypP3VTPk6bFPXxYIJ69c0UpbA",
+        authDomain: "charity-database-290c6.firebaseapp.com",
+        projectId: "charity-database-290c6",
+        storageBucket: "charity-database-290c6.appspot.com",
+        messagingSenderId: "33063228993",
+        appId: "1:33063228993:web:e964445c179cf29dc258c0",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      db.settings({ timestampsInSnapshots: true });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
