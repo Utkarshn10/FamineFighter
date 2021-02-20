@@ -1,6 +1,6 @@
 # FamineFighter
 
-    <p align="center" width="400px"> <font size="5"> <b> We have built a platform in which people, organization,
+ <p align="center" width="400px"> <font size="5"> <b> We have built a platform in which people, organization,
                   restaurants, etc can come together and donate their surplus
                   food. Through this platform, we are planning to solve two
                   major issues, the world is facing right now. First being
