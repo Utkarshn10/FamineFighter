@@ -1,43 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Donation</title>
+
+   <link rel="stylesheet" href="css/cards.css">
+
+   <!-- FIREBASE -->
+   <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
+</head>
+<body>
+   
+   <!-- horizontal -->
+
+   <h4>Restaurants Available</h4>
+   <button type="button" class="btn btn-success" id="get-info">
+      Get Data
+   </button>
+   <div class="row">
+      <div class="column guides">
+         <!-- <div class="flip">
+            <div class="front" style="background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+               <h1 class="text-shadow">RITZ CONTINENTAL</hi>
+            </div>
+            <div class="back">
+               <h2>Angular</h2>
+               <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+            </div>
+         </div> -->
+      </div>
+   </div>
 
 
+   <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCGbo82cXypP3VTPk6bFPXxYIJ69c0UpbA",
+        authDomain: "charity-database-290c6.firebaseapp.com",
+        projectId: "charity-database-290c6",
+        storageBucket: "charity-database-290c6.appspot.com",
+        messagingSenderId: "33063228993",
+        appId: "1:33063228993:web:e964445c179cf29dc258c0",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      db.settings({timestampsInSnapshots: true});
+   </script>
+   <script src="retrieve.js"></script>
 
-<link rel="stylesheet" href="css/cards.css">
-
-<!-- horizontal -->
-
-<h4>Horizontal Flip</h4>
-<div class="row">
-   <div class="column">
-<div class="flip">
-    <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-       <h1 class="text-shadow">RITZ CONTINENTAL</hi>
-    </div>
-    <div class="back">
-       <h2>Angular</h2>
-       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-    </div>
-</div>
-<div class="flip">
-    <div class="front" style="background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-       <h1 class="text-shadow">RITZ CONTINENTAL</hi>
-    </div>
-    <div class="back">
-       <h2>Angular</h2>
-       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-    </div>
-</div>
-<div class="flip">
-    <div class="front" style="background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-       <h1 class="text-shadow">RITZ CONTINENTAL</hi>
-    </div>
-    <div class="back">
-       <h2>Angular</h2>
-       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-    </div>
-</div>
-
-<br>
-<br>
-
-  </div>
-</div>
+</body>
+</html>
