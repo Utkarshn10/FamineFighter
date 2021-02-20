@@ -8,7 +8,7 @@
 
 ## Tech Stack 🗃
 
-<img src="<img alt="Custom badge" src="https://img.shields.io/endpoint?color=Yellow&label=Firebase">"> <img src=<img alt="Custom badge" src="https://img.shields.io/endpoint?color=Yellow&label=HTML5">> <img src="https://img.shields.io/endpoint?color=Yellow&label=CSS3"> <img src="https://img.shields.io/endpoint?color=Yellow&label=Javascript">
+<img src="https://img.shields.io/badge/-Firebase-yellow?style=flat&logo=Firebase"> <img src="https://img.shields.io/badge/-Javascript-black?style=flat&logo=Javascipt">
 
 ## Getting Started 👨‍💻
 
