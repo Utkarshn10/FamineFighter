@@ -4,7 +4,7 @@
 
 1. Utkarsh Nagar
 2. Ananya Tripathi
-3. Siddesh Shinde
+3. Siddhesh Shinde
 
 ## Tech Stack 🗃
 
