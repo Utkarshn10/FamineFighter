@@ -1,68 +1,42 @@
 console.log("We are in app.js file");
 
-const restoList = document.querySelector("#resto-list");
+// const restoList = document.querySelector("#resto-list");
 const form = document.querySelector("#add-resto-form");
-const getInfo = document.querySelector("#get-info");
+const submitButton = document.querySelector(".submit-button");
+const message = document.querySelector(".message");
+// const getInfo = document.querySelector("#get-info");
 
-
-// render elements from database
-
-function renderData(doc) {
-  let li = document.createElement("li");
-  let name = document.createElement("span");
-  let address = document.createElement("span");
-  let phoneNumber = document.createElement("span");
-  let email = document.createElement("span");
-
-  li.setAttribute("data-id", doc.id);
-  name.textContent = doc.data().Name;
-  address.textContent = doc.data().Address;
-  phoneNumber.textContent = doc.data().Phone;
-  email.textContent = doc.data().Email;
-
-  li.appendChild(name);
-  li.appendChild(address);
-  li.appendChild(phoneNumber);
-  li.appendChild(email);
-
-    // console.log(li);
-
-  restoList.appendChild(li);
-    
-}
-
-// getting data
-
-function getData() {
-    db.collection("restaurant")
-      .get()
-      .then((snapshot) => {
-        snapshot.docs.forEach((doc) => {
-          renderData(doc);
-        });
-      });
-}
 
 // saving data
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  getInfo.disabled = false;
+//   getInfo.disabled = false;
   db.collection("restaurant").add({
-    Name: form.field1.value,
-    Address: form.field2.value,
-    Email: form.field3.value,
-    Phone: form.field4.value,
+    personName: form.field1.value,
+    Name: form.field2.value,
+    Address: form.field3.value,
+    People: form.field4.value,
+    Email: form.field5.value,
+    Phone: form.field6.value,
   });
   form.field1.value = "";
   form.field2.value = "";
   form.field3.value = "";
   form.field4.value = "";
-  restoList.textContent='';
+  form.field5.value = "";
+  form.field6.value = "";
+  message.textContent = "Data Added Successfully";
+//   restoList.textContent='';
 });
 
-getInfo.onclick = function()
+// getInfo.onclick = function()
+// {
+//     getData();
+//     getInfo.disabled = true;
+// }
+
+submitButton.onclick () =  function()
 {
-    getData();
-    getInfo.disabled = true;
+    message.textContent = "Data Added Successfully";
 }
