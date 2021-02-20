@@ -56,9 +56,13 @@
       <form id="add-resto-form">
         <div class="section"><span>1</span>Basic Details :</div>
         <div class="inner-wrap">
-          <label>Your Full Name <input type="text" name="field1" /></label>
+          <label>Your Full name<input type="text" name="field1"
+          /></label>
+      
+          <label>Name of the Restaurant<input type="text" name="field2"
+          /></label>
           <label>Address <textarea name="field2"></textarea></label>
-        </div>
+     
 
         <div class="section"><span>2</span>Contact Details :</div>
         <div class="inner-wrap">
@@ -70,9 +74,10 @@
           <input type="submit" name="Sign Up" />
         </div>
 
-        <button type="button" class="btn btn-success" id="get-info">Get Data</button>
-        
-        </form>
+        <button type="button" class="btn btn-success" id="get-info">
+          Get Data
+        </button>
+      </form>
     </div>
 
     <div>
@@ -92,7 +97,7 @@
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       const db = firebase.firestore();
-      db.settings({ timestampsInSnapshots: true });
+      db.settings({timestampsInSnapshots: true});
     </script>
     <script src="app.js"></script>
   </body>
