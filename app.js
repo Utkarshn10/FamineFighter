@@ -2,6 +2,8 @@ console.log("We are in app.js file");
 
 // const restoList = document.querySelector("#resto-list");
 const form = document.querySelector("#add-resto-form");
+const submitButton = document.querySelector(".submit-button");
+const message = document.querySelector(".message");
 // const getInfo = document.querySelector("#get-info");
 
 
@@ -24,6 +26,7 @@ form.addEventListener("submit", (e) => {
   form.field4.value = "";
   form.field5.value = "";
   form.field6.value = "";
+  message.textContent = "Data Added Successfully";
 //   restoList.textContent='';
 });
 
@@ -32,3 +35,8 @@ form.addEventListener("submit", (e) => {
 //     getData();
 //     getInfo.disabled = true;
 // }
+
+submitButton.onclick () =  function()
+{
+    message.textContent = "Data Added Successfully";
+}
