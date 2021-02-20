@@ -24,13 +24,15 @@ const setUpGuides = (data) => {
         const li = `
         <div class="flip">
             <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-               <h1 class="text-shadow">NAME HERE</hi>
+               <h1 class="text-shadow">${guide.Name}</hi>
             </div>
             <div class="back">
-               <h2>${guide.Name}</h2>
-               <h3>${guide.Email}</h3>
-               <h3>${guide.Phone}</h3>
-               <h3>${guide.Address}</h3>
+               <h3>${guide.Name}</h3>
+               <p>Incharge: ${guide.personName}</p>
+               <p>Capacity to feed ${guide.People} people</p>
+               <p>Email Address: ${guide.Email}</p>
+               <p>Phone Number :${guide.Phone}</p>
+               <p>Address :${guide.Address}</p>
             </div>
          </div>
         `;
@@ -39,24 +41,6 @@ const setUpGuides = (data) => {
 
     guideList.innerHTML = html;
 }
-
-// saving data
-
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   getInfo.disabled = false;
-//   db.collection("restaurant").add({
-//     Name: form.field1.value,
-//     Address: form.field2.value,
-//     Email: form.field3.value,
-//     Phone: form.field4.value,
-//   });
-//   form.field1.value = "";
-//   form.field2.value = "";
-//   form.field3.value = "";
-//   form.field4.value = "";
-//   restoList.textContent='';
-// });
 
 getInfo.onclick = function () {
   getData();
